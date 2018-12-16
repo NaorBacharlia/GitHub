@@ -34,7 +34,7 @@ print("The age of student is:{}\nthe grade of student is:{}\nThe Average grade o
 
 
 """
-_________________________OUTPUT________________________
+_________________________OUTPUT_________________________
 
 
 ----------student No.1---------
