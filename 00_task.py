@@ -33,3 +33,31 @@ print('----------student No.4---------')
 print("The age of student is:{}\nthe grade of student is:{}\nThe Average grade of students is:{}\nThe Average age of students: {}\n".format(s4.age,s4.grade,student.avg_grade(),student.avg_age()))
 
 
+"""
+_________________________OUTPUT________________________
+
+
+----------student No.1---------
+The age of student is:22
+the grade of student is:80
+The Average grade of students is:83.0
+The Average age of students: 26.5
+
+----------student No.2---------
+The age of student is:24
+the grade of student is:93
+The Average grade of students is:83.0
+The Average age of students: 26.5
+
+----------student No.3---------
+The age of student is:32
+the grade of student is:84
+The Average grade of students is:83.0
+The Average age of students: 26.5
+
+----------student No.4---------
+The age of student is:28
+the grade of student is:75
+The Average grade of students is:83.0
+The Average age of students: 26.5
+"""
