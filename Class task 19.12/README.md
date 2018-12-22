@@ -6,7 +6,6 @@
 ```cmd
 py 00_task.py
 ```
-
 class CinemaRoom:
     def __init__(self,MyMovie):
         self.chairMatrix=[[False for i in range(10)] for j in range(8)]
@@ -34,7 +33,6 @@ class CinemaRoom:
                     res+=" X | "
             res += "\n------------------------------------------------\n"
         return res
-
 class Cinema:
     def __init__(self):
         self.movies_arr = [None for i in range(100)]
@@ -52,28 +50,21 @@ class Cinema:
                 str1+="\n--------------------Room number{}---------------------\n".format(i+1)
                 str1+= self.rooms_arr[i].GetDescription()
         return str1
- 
 class Movie:
     def __init__(self,length,movie_name):
         self.length=length
         self.movie_name=movie_name 
     def GetDescription(self):
         return "Movie name {} length of the movie {}".format(self.movie_name,self.length)
-
 m1=movie(90,"avatar")
 m2=movie(75,"avengers")
-
 room1=CinemaRoom(m1)
 room2=CinemaRoom(m2)
-
 myCinema=cinema()
-
 myCinema.rooms_arr[0]=room1
 myCinema.rooms_arr[1]=room2
-
 myCinema.BuyTicket("avatar", 4)
 myCinema.BuyTicket("avengers", 6)
-
 print(myCinema.GetDescription())
 
 
