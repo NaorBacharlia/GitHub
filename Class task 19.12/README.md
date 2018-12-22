@@ -2,7 +2,7 @@
 
 ## 19.12.18
 
-*cinema task
+* cinema task
 ```cmd
 py 00_task.py
 ```
