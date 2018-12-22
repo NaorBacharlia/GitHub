@@ -5,6 +5,9 @@
 *cinema task
 ```cmd
 py 00_task.py
+```
+
+```cmd
 
 class CinemaRoom:
     def __init__(self,MyMovie):
@@ -83,7 +86,7 @@ print(myCinema.GetDescription())
 ```
 
 * output
-```
+```cmd
 --------------------Room number1---------------------
 Movie in this room Movie name avatar length of the movie 90
 
