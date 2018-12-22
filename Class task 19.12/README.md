@@ -1,15 +1,16 @@
 # Class task 
-##19.12.18
 
-* cinema task
+## 19.12.18
+
+*cinema task
 ```cmd
 py 00_task.py
 ```
+
 class CinemaRoom:
     def __init__(self,MyMovie):
         self.chairMatrix=[[False for i in range(10)] for j in range(8)]
         self.MyMovie=MyMovie
-    
     def BuyChairs(self,amount):
         for row in range(len(self.chairMatrix)):
             for col in range (len(self.chairMatrix[row])):
@@ -21,7 +22,6 @@ class CinemaRoom:
             if amount==0:
                 break
         return amount==0
-   
     def GetDescription(self):
         res=""
         res+="Movie in this room {}".format(self.MyMovie.GetDescription())
@@ -39,14 +39,12 @@ class Cinema:
     def __init__(self):
         self.movies_arr = [None for i in range(100)]
         self.rooms_arr = [None for i in range(6)]
-    
     def BuyTicket(self,movieName,amount):
         res=False
         for i in range (len(self.rooms_arr)):
             if self.rooms_arr[i] != None and self.rooms_arr[i].MyMovie.movie_name==movieName:
                 res=self.rooms_arr[i].BuyChairs(amount)
         return res
-   
     def GetDescription(self):
         str1=""
         for i in range(len(self.rooms_arr)):
@@ -54,12 +52,11 @@ class Cinema:
                 str1+="\n--------------------Room number{}---------------------\n".format(i+1)
                 str1+= self.rooms_arr[i].GetDescription()
         return str1
-    
+ 
 class Movie:
     def __init__(self,length,movie_name):
         self.length=length
-        self.movie_name=movie_name
-  
+        self.movie_name=movie_name 
     def GetDescription(self):
         return "Movie name {} length of the movie {}".format(self.movie_name,self.length)
 
@@ -80,8 +77,8 @@ myCinema.BuyTicket("avengers", 6)
 print(myCinema.GetDescription())
 
 
-* output
-"""
+*output
+
 --------------------Room number1---------------------
 Movie in this room Movie name avatar length of the movie 90
 
@@ -124,4 +121,3 @@ The ChairMatrix in the room (V= orderded, X = not ordered)
  X |  X |  X |  X |  X |  X |  X |  X |  X |  X |
 ------------------------------------------------
 
-"""
